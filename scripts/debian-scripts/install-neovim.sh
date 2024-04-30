@@ -29,3 +29,5 @@ if [ -z "$(which fd)" ]; then
     echo "fd not found, creating symlink..."
     sudo ln -s "$(which fdfind)" "/usr/local/bin/fd"
 fi
+
+git clone https://github.com/ferplnat/nvim "$HOME/.config/nvim"
