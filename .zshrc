@@ -18,6 +18,10 @@ if [[ -n "$(which git)" ]]; then
     git config --global push.autoSetupRemote true
     git config --global fetch.prune true
     git config --global init.defaultBranch main
+    
+    if ! [[ -d "$zsh_plugin_dir" ]]; then
+        mkdir -p "$zsh_plugin_dir"
+    fi
 
     if ! [[ -d "$zsh_plugin_dir/zsh-autosuggestions" ]]; then
         ( cd "$zsh_plugin_dir" && git clone "https://github.com/zsh-users/zsh-autosuggestions" )
