@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(fd --type directory --exact-depth 1 . ~/projects | fzf)
+    selected=$(fd --type directory --exact-depth 1 . ~/personal ~/projects | fzf)
 fi
 
 if [[ -z $selected ]]; then
