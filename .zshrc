@@ -11,6 +11,8 @@ get_git_branch() {
 
 zsh_plugin_dir="$HOME/.zsh/plugins/"
 
+printf '\e[1 q'
+
 alias ls="ls -a --color=auto"
 alias sl="ls"
 

@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-cp ./tmux/.tmux.conf ~/
-cp ./.zshrc ~/
+set -eux -o pipefail
 
-mkdir -p ~/.local/bin/scripts
-cp -rf ./scripts ~/.local/bin/scripts
+cp -f "./tmux/.tmux.conf" "$HOME/"
+cp -f "./.zshrc" "$HOME/"
+
+mkdir -p "$HOME/.config/ghostty/"
+cp -f "./ghostty/config" "$HOME/.config/ghostty/"
+
+mkdir -p "$HOME/.local/bin/scripts"
+cp -rf "./scripts" "$HOME/.local/bin"
