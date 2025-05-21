@@ -2,12 +2,12 @@
 
 set -eux -o pipefail
 
-downloadUri="https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz"
+downloadUri="https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz"
 packageManager=""
 installDir="/opt/nvim"
 
 if type -P "sw_vers" > /dev/null 2>&1; then
-    downloadUri="https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64.tar.gz"
+    downloadUri="https://github.com/neovim/neovim/releases/download/stable/nvim-macos-arm64.tar.gz"
     packageManager="brew"
 fi
 
