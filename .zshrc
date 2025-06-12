@@ -45,3 +45,7 @@ PROMPT='%F{green}%n [%f %~ %F{green}]%f%F{red}$(get_git_branch)%f %F{green}\$%f 
 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+unset zsh_plugin_dir
+
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
