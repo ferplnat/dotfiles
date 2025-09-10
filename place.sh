@@ -9,5 +9,4 @@ cp -f "./.ripgreprc" "$HOME/"
 mkdir -p "$HOME/.config/ghostty/"
 cp -f "./ghostty/config" "$HOME/.config/ghostty/"
 
-mkdir -p "$HOME/.local/bin/scripts"
-cp -rf "./scripts" "$HOME/.local/bin"
+cp -rf "./scripts/." "$HOME/.local/bin"
